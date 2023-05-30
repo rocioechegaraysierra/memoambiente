@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MEMOambiente - Jardín Nº 906 - Carmen Diharce</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" /> 
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="inicio">
+        <img src="./img/inicio.jpg"  width="100%" href="">
+        <div class="inputNombre" style="padding: 1%;">
+            <input type="text" id='name' placeholder="Escribí tu nombre" onfocus="this.value=''">
+        </div>
+        <div class="botones">
+            <button id=facil>JUGAR</button>
+        </div>
+    </div>
+    <div class="main-container">
+        <div class="tablero"></div>
+
+    </div>
+    <div id="modal" class="oculto">
+        <div id="gana" class="oculto">
+            <div class="gana-msg">
+                <p><span class="inputNombre"></span>, lo lograste!</p>
+            </div>
+            <div class="botones">
+                <button class="volver-jugar">VOLVER A JUGAR</button>
+            </div>
+            <div class="ranking"></div>
+        </div> 
+    </div>    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/memotest.js"></script>
+</body>
+</html>
